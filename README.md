@@ -1,4 +1,4 @@
-#Job Cost Calculation Application
+# Job Cost Calculation Application
 
 ### Overview
 This application is designed to calculate the total cost of jobs in the construction industry based on provided job and item data. It utilizes TypeScript to ensure type safety and clarity throughout the codebase. The application reads job data from a JSON file, processes the information, and calculates costs based on job types and quantities.
@@ -18,7 +18,8 @@ jobId, jobDescription, jobUnit, jobType, itemId, itemDescription, itemUnit, jobI
 
 `Job` Interface: Represents the output structure for calculated jobs, including properties for code, job, unit, and totalCost.
 
-Cost Calculation Functions:
+### Cost Calculation Functions:
+
 `calculateInputCost(item: JobData)`: cost of individual job items based on quantity and unit price.
 `calculateJobCost(jobId: number, calculatedJobs: Map<number, number>)`: calculates the total cost of a job:  for both direct inputs and nested jobs.
 `calculateJobs()`: create a list of unique jobs with total costs.
