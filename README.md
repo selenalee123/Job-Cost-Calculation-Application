@@ -1,9 +1,9 @@
-Job Cost Calculation Application
+#Job Cost Calculation Application
 
-Overview
+### Overview
 This application is designed to calculate the total cost of jobs in the construction industry based on provided job and item data. It utilizes TypeScript to ensure type safety and clarity throughout the codebase. The application reads job data from a JSON file, processes the information, and calculates costs based on job types and quantities.
 
-Features
+### Features
 Job Cost Calculation: The application calculates costs for jobs with both direct inputs and nested jobs.
 
 Type Safety: Leveraging TypeScript interfaces, the application enforces structure and type safety
@@ -12,7 +12,7 @@ Data Handling: The job data is imported from a JSON file, allowing for easy upda
 
 ![Job Calculation Screenshot](src/images/demo.png)
 
-Key Components
+### Key Components
 `JobData` Interface: Defines the structure of each job item, including properties such as 
 jobId, jobDescription, jobUnit, jobType, itemId, itemDescription, itemUnit, jobItemQuantity, and pricePerUnit.
 
@@ -20,11 +20,11 @@ jobId, jobDescription, jobUnit, jobType, itemId, itemDescription, itemUnit, jobI
 
 Cost Calculation Functions:
 `calculateInputCost(item: JobData)`: cost of individual job items based on quantity and unit price.
-`calculateJobCost(jobId: number, calculatedJobs: Map<number, number>)`: calculates the total cost of a job, accounting for both direct inputs and nested jobs.
-`calculateJobs()`: Generates a list of unique jobs with their respective total costs.
+`calculateJobCost(jobId: number, calculatedJobs: Map<number, number>)`: calculates the total cost of a job:  for both direct inputs and nested jobs.
+`calculateJobs()`: create a list of unique jobs with total costs.
 
 
-Installation
+### Installation
 Install the necessary dependencies:
 `npm install`
 Usage
@@ -33,6 +33,6 @@ To run the application, use the following command:
 To run tests for the application, use the following command:
 `npm test`
 
-Testing
+### Testing
 Tests are defined in the `calculateCost.test.ts `
 
